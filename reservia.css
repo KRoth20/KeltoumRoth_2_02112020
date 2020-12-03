@@ -1,35 +1,24 @@
 *{
     margin: 0;
 }
-
 body{
     font-family:'raleway';
-    font-size:1em;
 }
 h1{
     font-size: 1.5em;
     font-weight: 900;
-    margin: 10px;
+    padding-bottom: 10px;
 }
 h2{
     font-size: 1em;
     font-weight: lighter;
-    margin: 10px;
-    margin-bottom: 20px;
 }
 h3{
-    padding-left: 5px;
-}
-h4{
-    padding-left: 5px;
-}
-h5{
-    padding-left: 5px;
-    font-weight:500;
+    Font-size: 0.8em;
+    font-weight: lighter;
 }
 p{
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 0.8em;
 }
 
 /*HEADER*/
@@ -75,11 +64,12 @@ nav{
 }
 /*HEADER END*/
 
-/*SECTION_1*/
 main{
     width: 90%;
     margin: auto;
 }
+
+/*SECTION_FILTRES*/
 #recherche{
     width: 100%;
     display: flex;
@@ -91,6 +81,7 @@ main{
     flex-direction: row;
     width: 400px;
     height: 60px;
+    padding-top: 20px;
 }
 .icone img{
     background-color: #F2F2F2;
@@ -113,7 +104,7 @@ input {
     outline:none;
     border: none;
     font-family: 'raleway';
-    font-size: 18px;
+    font-size: 1.4em;
     font-weight: bold; 
     color:black;
 }
@@ -146,14 +137,6 @@ input {
     background-color: #DEEBFF;
     border-radius: 50%;
 }
-/* .zoom{
-    outline: none;
-    text-decoration: none;
-}
-.zoom :hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #0065FC;
-} */
 .zoom {
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -182,88 +165,41 @@ input {
 .tri{
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    width: 70%;
     height: 50px;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+.tri p{
+    font-weight: bold;
+    font-size: 1em;
+}   
 .info{
     display: flex;
     flex-direction: row;
-    height: 40px;
+    align-items: center;
 }
 .info img{
     width: 10px;
     height: 10px;
-    margin-top: 8px;
     padding: 5px;
+    margin-right: 10px;
     background-color: white;
     border : #F2F2F2 solid 0.5px;
     border-radius: 50%;
 }
-/*SECTION_1 END */
+/*SECTION_FILTRES END */
 
-/*SECTION_2*/
+/*SECTION RESERVATION*/
+    /*OFFRES*/
 #hebergements{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
-}
-.norme img{
-    width: 250px;
-    height: 120px;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-}
-.norme{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius:15px;
-    background-color: white;
-    box-shadow: #B6B5B5 0px 0px 15px;
-    font-size: 18px;
-    padding: 5px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-a :hover{
-    cursor: pointer;
-}
-.titre img{
-    width: 18px;
-    height: 18px;
-}
-
-.titre{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.pop img{
-    width: 130px;
-    height: 130px;  
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
-}
-.stars img{
-    width: 8px;
-    height: 8px;
-    border: none;
-    padding: 0px;
-}
-.stars{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 5px;
 }
 .col_hebergements{
     display: flex;
@@ -278,6 +214,11 @@ a :hover{
 }
 .col_hebergements p{
     margin-top: 20px;
+    font-weight: bold;
+    font-size: 1em;   
+}
+.col_hebergements h2, h3{
+    margin-left: 5px;
 }
 .hotels{
     width: 100%;
@@ -287,6 +228,59 @@ a :hover{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+.norme{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    border-radius:15px;
+    background-color: white;
+    box-shadow: #E4E4E4 0px 5px 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+.norme img{
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.norme h2{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.stars img{
+    width: 8px;
+    height: 8px;
+    border: none;
+    padding: 0px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a :hover{
+    cursor: pointer;
+}
+
+    /* BEST OFFRES*/
+.titre img{
+    width: 18px;
+    height: 18px;
+}
+.titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .col_pop{
     display: flex;
@@ -299,24 +293,38 @@ a :hover{
     height: 500px;
     padding:25px;
 }
+.bloc_pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
 .pop{
     background-color: white;
     border-radius: 15px;
-    width: 100%;
-    height: 130px;
+    height: 26%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    box-shadow: #B6B5B5 0px 0px 15px;
-    font-size: 18px;
+    box-shadow: #E4E4E4 0px 5px 10px;
     padding: 5px;
 }
-
+.pop img{
+    width: 130px;
+    height: 120px;  
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+.pop h2{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
 .pop a{
     display: flex;
     flex-direction: row;
 }
-
 .best{
     display: flex;
     flex-direction: column;
@@ -339,16 +347,15 @@ a :hover{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 5px;
+    padding: 5px;
 }
-/*SECTION_2 END*/
+/*SECTION RESERVATION END*/
 
-/*SECTION_3*/
+/*SECTION_ACTIVITES*/
 #activites{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    /* height:auto; */
+    width: 102%;
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -359,45 +366,46 @@ a :hover{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     margin-top: 20px;
 }
 figure{
-    box-shadow:#B6B5B5 0px 0px 10px;
+    box-shadow:#F2F2F2 0px 5px 5px;
     border-radius: 15px 15px 15px 15px;
+    width: 23%;
 }
 .A img{
-    width: 300px;
+    width: 100%;
     height: 370px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 .B img{
-    width: 300px;
+    width: 100%;
     height: 185px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 .C img{
-    width: 300px;
+    width: 100%;
     height: 95px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 .D img{
-    width: 300px;
+    width: 100%;
     height: 370px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 .E img{
-    width: 300px;
+    width: 100%;
     height: 140px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 .F img{
-    width: 300px;
+    width: 100%;
     height: 140px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
@@ -409,9 +417,7 @@ figure{
     border-radius: 0px 0px 15px 15px;
     padding: 20px;
 }
-
-
-/*SECTION_3 END*/
+/*SECTION_ACTIVITES END*/
 
 /*FOOTER*/
 .container_footer{
@@ -419,22 +425,24 @@ figure{
     flex-direction: row;
     justify-content: space-between;
     background-color: #F2F2F2;
-    height: 180px;
+    height: 200px;
+    width: 100%;
 }
 .col_contacts{
-    width: 75%;
+    margin-left: 70px;
+    width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px;
+}
+.col_contacts h1{
+    margin: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 1em;  
 }
 .col_contacts h2{
-    padding-left: 25px;
-}
-.col_contacts p{
-    padding-bottom: 10px;
-    padding-left: 30px;
-    font-weight: bold;
+    margin-bottom: 10px;
 }
 /*FOOTER END*/
 

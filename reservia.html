@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reservia.css">
     <link rel="stylesheet" media="screen and (max-width: 700px)" href="reservia_mobile.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 1024px)" href="reservia_tablette.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 1163px)" href="reservia_tablette.css"/>
     <title>Reservia</title>
 </head>
 <body>
 
     <header>
         <div id="container_header">
-            <!-- <div class="menu"> -->
             <img src="images/logo/Reservia.svg" alt="logo">
             <nav class="menu">
                 <a class="hebergements" href="#hebergements">Hébergements </a>
                 <a class="activites" href="#activites">Activités</a>
                 <a class="sinscrire" href="page_inscription.html">S'inscrire</a>
             </nav>
-            <!-- </div> -->
         </div>
     </header>
     
     <main>
+        <!--zone de filtres-->
         <section id="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre ville ou pleine nature</h2>
@@ -35,7 +34,7 @@
                 <div class="ville">
                     <form method="post" action="traitement.php">
                     <p>
-                        <input type="search" id="ville" name="ville" placeholder="Marseille,France" autofocus required minlength="4" maxlength="12" size="20"/>
+                        <input type="search" id="ville" name="ville" placeholder="Marseille, France" autofocus required minlength="4" maxlength="12" size="20"/>
                     </p>
                     </form>
                 </div>
@@ -46,6 +45,7 @@
                     <input id="loupe" type="image" src="images/icones/search-solid.svg" alt="loupe"/>
                 </div>
             </div>
+
             <div class="tri">
                 <div class="fixe">
                 <p>Filtres</p>
@@ -67,20 +67,23 @@
                     <p>Animaux autorisés</p>
                 </div>
             </div>
+
             <div class="info">
                 <img src="images/icones/info-solid.svg" alt="info">
                 <h2>Plus de 500 logements sont disponibles dans cette ville</h2>
             </div>
         </section>
-
+        <!--fin zone de filtres-->
+        <!--zone de réservation-->
+            <!--offres-->
         <section id="hebergements">
             <div class="col_hebergements">
                 <h1>Hébergements à Marseille</h1>
                 <div class="hotels"> 
                     <div class="norme">
                          <a href=""><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge_la_Cannebiere">
-                        <h4>Auberge La Cannebière</h4>
-                        <h5>Nuit à partir de <strong>25€</strong></h5>
+                        <h2>Auberge La Cannebière</h2>
+                        <h3>Nuit à partir de <strong>25€</strong></h3>
                         <div class="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
@@ -91,8 +94,8 @@
                     </div>
                     <div class="norme">
                         <a href=""><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel_du_port">
-                        <h4>Hôtel du port</h4>
-                        <h5>Nuit à partir de 52<strong>€</strong></h5>
+                        <h2>Hôtel du port</h2>
+                        <h3>Nuit à partir de 52<strong>€</strong></h3>
                         <div class="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
@@ -103,8 +106,8 @@
                     </div>
                     <div class="norme">
                         <a href=""><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel_des_mouettes">
-                        <h4>Hôtel Les Mouettes</h4>
-                        <h5>Nuit à partir de 76<strong>€</strong></h5>
+                        <h2>Hôtel Les Mouettes</h2>
+                        <h3>Nuit à partir de 76<strong>€</strong></h3>
                         <div class="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
@@ -115,8 +118,8 @@
                     </div>
                     <div class="norme">
                         <a href=""><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel_de_la_mer">
-                        <h4>Hôtel de la mer</h4>
-                        <h5>Nuit à partir de 46<strong>€</strong></h5>
+                        <h2>Hôtel de la mer</h2>
+                        <h3>Nuit à partir de 46<strong>€</strong></h3>
                         <div class="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
@@ -127,8 +130,8 @@
                     </div>
                     <div class="norme">
                         <a href=""><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge_du_panier">
-                        <h4>Auberge du panier</h4>
-                        <h5>Nuit à partir de <strong>23€</strong></h5>
+                        <h2>Auberge du panier</h2>
+                        <h3>Nuit à partir de <strong>23€</strong></h3>
                         <div class="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
@@ -139,8 +142,8 @@
                     </div>
                     <div class="norme">
                         <a href=""><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel_chez_amina">
-                        <h4>Hôtel chez Amina</h4>
-                        <h5>Nuit à partir de 96<strong>€</strong></h5>
+                        <h2>Hôtel chez Amina</h2>
+                        <h3>Nuit à partir de 96<strong>€</strong></h3>
                         <div class="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
                             <img src="images/icones/star-bleu.svg" alt="stars">
@@ -152,69 +155,72 @@
                 </div>
                 <p><a href="">Afficher plus</a></p>
             </div>
-
+            <!--best offres-->
             <div class="col_pop">
                 <div class="titre">
                     <h1>Les plus populaires</h1>
                     <img src="images/icones/chart-line-solid.svg" alt="quote">   
                 </div>
-                <div class="pop">
-                    <a href="">
-                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="soleil_du_matin">
-                        <div class="best">
-                            <div class="stretch">
-                                <h4>Hôtel Le soleil du matin</h4>
-                                <h5>Nuit à partir de 128€</h5>
+                <div class="bloc_pop">
+                    <div class="pop">
+                        <a href="">
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="soleil_du_matin">
+                            <div class="best">
+                                <div class="stretch">
+                                    <h2>Hôtel Le soleil du matin</h2>
+                                    <h3>Nuit à partir de 128€</h3>
+                                </div>
+                                <div class="stars_2">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                </div>
                             </div>
-                            <div class="stars_2">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
+                        </a>
+                    </div>
+                    <div class="pop">
+                        <a href="">
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au_coeur_de_l_eau">
+                            <div class="best">
+                                <div class="stretch">
+                                    <h2>Au coeur de l'eau <br> Chambres d'hôtes</h2>
+                                    <h3>Nuit à partir de 71€</h3>
+                                </div>
+                                <div class="stars_2">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-gris.svg" alt="stars">
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pop">
-                    <a href="">
-                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au_coeur_de_l_eau">
-                        <div class="best">
-                            <div class="stretch">
-                                <h4>Au coeur de l'eau <br> Chambres d'hôtes</h4>
-                                <h5>Nuit à partir de 71€</h5>
+                        </a>
+                    </div>
+                    <div class="pop">
+                        <a href="">
+                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="bleu_blanc">
+                            <div class="best">
+                                <div class="stretch">
+                                    <h2>Hôtel Tout bleu et blanc </h2>
+                                    <h3>Nuit à partir de 68€</h3>
+                                </div>    
+                                <div class="stars_2">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-bleu.svg" alt="stars">
+                                    <img src="images/icones/star-gris.svg" alt="stars">
+                                </div>
                             </div>
-                            <div class="stars_2">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-gris.svg" alt="stars">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="pop">
-                    <a href="">
-                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="bleu_blanc">
-                        <div class="best">
-                            <div class="stretch">
-                                <h4>Hôtel Tout bleu et blanc </h4>
-                                <h5>Nuit à partir de 68€</h5>
-                            </div>    
-                            <div class="stars_2">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-bleu.svg" alt="stars">
-                                <img src="images/icones/star-gris.svg" alt="stars">
-                            </div>
-                        </div>
-                    </a>    
+                        </a>    
+                    </div>
                 </div>
             </div>
         </section>
-        
+        <!--fin de zone de réservation-->
+        <!--zone d'activités-->
         <section id="activites">
             <h1>Activités à Marseille</h1>
             <div class="a_faire">
@@ -243,7 +249,7 @@
                     <a href="#"><img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="longchamp">
                     <P>Parc Longchamp</p></a> 
                 </figure>
-             
+                
             </div>
         </section>
     </main>
@@ -252,18 +258,18 @@
         <div class="container_footer">
             <div class="col_contacts">
                 <div class="apropos">
-                    <p>A propos</p>
+                    <h1>A propos</h1>
                     <a href=""><h2>Fonctionnement du site</h2>
                     <h2>Conditions générales de vente</h2>
                     <h2>Données et confidentialité</h2></a>
                 </div>
                 <div class="hébergements">
-                    <p>Nos hébergements</p>
+                    <h1>Nos hébergements</h1>
                     <a href=""><h2>Charte qualité</h2>
                     <h2>Soumettre votre hôtel</h2></a>
                 </div>
                 <div class="assistance">
-                    <p>Assistance</p>
+                    <h1>Assistance</h1>
                     <a href=""><h2>Centre d'aide</h2>
                     <h2>Nous contacter</h2></a>
                 </div>
