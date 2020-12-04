@@ -136,17 +136,12 @@ input {
     width: 20px;
     height: 20px;
     padding: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: #DEEBFF;
     border-radius: 50%;
 }
-.zoom {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.zoom :hover {
+
+.choix img:hover {
     cursor: pointer;
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
@@ -163,7 +158,6 @@ input {
     border-radius: 30px;
     align-items: center;
     padding-right: 20px;
-    line-height: 0px;
 }
 .tri{
     display: flex;
@@ -177,7 +171,7 @@ input {
 }
 .tri p{
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
 }   
 .info{
     display: flex;

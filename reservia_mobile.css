@@ -63,6 +63,7 @@ main{
 #recherche h3{
     font-size:1.1em;
 }
+/*modif icone*/
 .loupe{
     padding: 17px 25px 28px 25px;
     border-radius: 15px;
@@ -74,8 +75,8 @@ main{
     background-position: center;
     border: none;
 }
+/*modif icone*/
 .localisation{
-    /* border: solid green; */
     display: flex;
     flex-direction: row;
     width: 100%;
