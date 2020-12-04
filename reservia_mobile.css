@@ -60,15 +60,15 @@ main{
     width:95%;
     margin: auto;
 }
-#recherche h2{
-    font-size:1.1em ;
+#recherche h3{
+    font-size:1.1em;
 }
 .loupe{
     padding: 17px 25px 28px 25px;
     border-radius: 15px;
     margin-left: -20px;
     background-color: #0065FC;
-    background-image: url(images/icones/search-solid.svg);
+    background-image: url(images/icones/loupe.svg);
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: center;
@@ -288,7 +288,7 @@ input {
 .col_hebergements p{
     padding-left: 25px;
 }
-.col_hebergements h1, #activites h1{
+.col_hebergements h2, #activites h2{
     width: 90%;
     margin:auto;
 }
